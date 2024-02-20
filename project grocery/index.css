@@ -1,32 +1,109 @@
+/* All related to main index page is written here */
+
 *{
     text-decoration: none;
+    margin: 0px;
+}
+.common{
+    padding: 40px;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: 0.30;
+    background-image: url(https://foyr.com/learn/wp-content/uploads/2022/06/types-of-house-styles-and-homes.jpg);
+    background-size: cover;    
+    z-index: -1;
 }
 
 .navbar{
     background-color: blueviolet;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100px;
+    position: sticky;
 }
 
-/* .nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
-li{
+.navbar>div:last-child li{
     list-style: none;
     display: inline-block;
 }
 
-li a{
+.navbar>div:first-child a{
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 60px;
+}
+
+.navbar>div:last-child li a{
     font-size: larger;
     color: white;
     font-weight: bold;
     margin-right: 25px;
+}
 
+#first{
+    border: 2px solid;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#second{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;    
+    align-items: flex-start;  
+}
+
+#second h2{
+    align-self: flex-start;
+}
+#second li{
+    align-self: flex-end;
+    display: inline-block;
+    list-style: none;
+    border: 4px solid yellow;
+}
+
+figcaption{
+    text-align: center;
+}
+
+#third{
+    border: 2px solid green;
+    height: 300px;
+}
+
+#third article{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#third article p{
+    width: 40%;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid blue;
+    border-radius: 20px;
+}
+
+/* All relating to Login Page is here */
+form{
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 2px solid gray;
+    text-align: center;
 }
