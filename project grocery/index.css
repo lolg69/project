@@ -8,6 +8,11 @@
     padding: 40px;
 }
 
+img{
+    height: 300px;
+    width: 300px;
+}
+
 body::before{
     content: "";
     position: absolute;
@@ -18,6 +23,7 @@ body::before{
     opacity: 0.30;
     background-image: url(https://foyr.com/learn/wp-content/uploads/2022/06/types-of-house-styles-and-homes.jpg);
     background-size: cover;    
+    /* background: repeat-x; */
     z-index: -1;
 }
 
@@ -101,9 +107,22 @@ figcaption{
 }
 
 /* All relating to Login Page is here */
-form{
+#login-form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    padding-left:180px ;
+    padding-right: 180px;
     margin-left: 400px;
     margin-right: 400px;
     border: 2px solid gray;
     text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 0px 5px;
+}
+
+#login-form input{
+    padding: 6px;
+    border: 2px solid;
+    border-radius: 15px;
 }
